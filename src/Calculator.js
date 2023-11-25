@@ -2,7 +2,7 @@ function Square({ value }) {
     return <button className="square">{value}</button>;
   }
   
- function Calculate({value, onSquareClick}){
+ function Calculateb({value, onSquareClick}){
     return(
         <button className="square" onClick={onSquareClick}>
             {value}
@@ -10,7 +10,11 @@ function Square({ value }) {
     )
  }
 
-
+function CalculateW(){
+    const addTo = (nvalue) =>{
+        setCalcVal(ovalue => ovalue + nvalue)
+    }
+}
  
 
  
@@ -21,33 +25,33 @@ function Square({ value }) {
       <>
         <div className="Name"></div>
         <div className="board-row">
-          <Calculate value="7" />
-          <Calculate value="8" />
-          <Calculate value="9" />
-          <Calculate value="/" />
+          <Calculateb value="7" />
+          <Calculateb value="8" />
+          <Calculateb value="9" />
+          <Calculateb value="/" />
 
         </div>
         <div className="board-row">
-          <Calculate value="4" />
-          <Calculate value="5" />
-          <Calculate value="6" />
-          <Calculate value="-" />
+          <Calculateb value="4" />
+          <Calculateb value="5" />
+          <Calculateb value="6" />
+          <Calculateb value="-" />
 
 
 
         </div>
         <div className="board-row">
-          <Calculate value="1" />
-          <Calculate value="2" />
-          <Calculate value="3" />
-          <Calculate value="+" />
+          <Calculateb value="1" />
+          <Calculateb value="2" />
+          <Calculateb value="3" />
+          <Calculateb value="+" />
 
         </div>
         <div className="board-row">
-          <Calculate value="" />
-          <Calculate value="0" />
-          <Calculate value="C" />
-          <Calculate value="*" />
+          <Calculateb value="" />
+          <Calculateb value="0" />
+          <Calculateb value="C" />
+          <Calculateb value="*" />
 
         </div>
       </>
